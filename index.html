@@ -655,7 +655,7 @@ async function init() {
     document.getElementById('app').style.display='block';
     const now=new Date();
     const h=now.getHours();
-    const greet = h<12?'Bom dia':'h<18?'Boa tarde':'Boa noite';
+    const greet = h<12?'Bom dia':h<18?'Boa tarde':'Boa noite';
     document.getElementById('dash-greet').textContent = h<12?'Bom dia! ☕':h<18?'Boa tarde! ☕':'Boa noite! 🌙';
     document.getElementById('dash-date').textContent=now.toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long'});
     invValues={};
